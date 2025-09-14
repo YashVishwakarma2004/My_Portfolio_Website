@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Web Developer</title>
+    <link rel="stylesheet" href="first_page.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="MySkills.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        #home {
+            color: white;
+            font-family: red serif;
+            font-weight: bold;
+            font-size: 21px;
+            border: none;
+            background-color: rgb(3, 3, 43);
+        }
+
+        #home :hover {
+            box-shadow: 0px 0px 0px rgb(197, 197, 205);
+            background-color: rgb(208, 208, 216);
+        }
+
+        .text-containers {
+            font-size: 50px;
+            font-weight: bold;
+            color: rgb(6, 189, 250);
+            font-family: red serif;
+        }
+        .cursor {
+            display: inline-block;
+            width: 5px;
+            height: 40px;
+            background-color: #938787;
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container1"> -->
+    <nav id="B" class="navbar">
+        <div class="logo">
+            <img class="logoimg" src="logo.jpg">
+            <b style="font-family: red serif;">Dynamic Creators Studio</b>
+        </div>
+        <ul class="nav-links">
+            <li><button onclick="srollToHome()" id="home" style="box-shadow: 0px 0px 0px rgb(3, 3, 43);">Home</button>
+            </li>
+            <li><button onclick="scrollToSection()" id="home"
+                    style="box-shadow: 0px 0px 0px rgb(3, 3, 43);">About</button></li>
+            <li><button onclick="skills()" id="home" style="box-shadow: 0px 0px 0px rgb(3, 3, 43);">Skills</button></li>
+            <li><button onclick="scrollToSections()" id="home"
+                    style="box-shadow: 0px 0px 0px rgb(3, 3, 43);">Services</button></li>
+            <li><button onclick="scrollToSectionss()" id="home"
+                    style="box-shadow: 0px 0px 0px rgb(3, 3, 43);">Contact</button></li>
+                    
+        </ul>
+        <div class="home" style="width: 40px;">
+            <button onclick="bottom()">
+                <img class="anchor" src="library.svg" alt="home" style="filter: invert(0);">
+            </button>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- About Me Section -->
+        <div class="profile_pic">
+            <!-- Profile Image -->
+            <img id="photo" src="instagram profile photo.png" alt="Your Name" class="profile-pic">
+        </div>
+        <div id="about" class="about-container">
+            <!-- Text Section -->
+            <div id="abouts" class="text-container">
+                <!-- <p style="color: wheat;">yash</p> -->
+                <p class="description">Hello, I'm</p>
+                <p id="A" class="A name">Yash Vishwakarma</p>
+                <p class="description">And I am a </p>
+                <div class="text-containers">
+                    <span id="typed-text"></span>
+                    <span class="cursor"></span>
+                </div>
+                <!-- <p class="A role text-container cursor" id="typed-text">Web Developer!</p> -->
+                <!-- <p class="A role">Web Developer!</p> -->
+                <p class="description">
+                    I'm a passionate Web Developer with expertise in creating dynamic, responsive, and user-friendly
+                    websites.
+                    I love coding and bringing creative ideas to life through web development.
+                </p>
+                <div class="social-icons">
+                    <a href="https://github.com/yourprofile" target="_blank">WhatsApp</a> |
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank">Instagram</a> |
+                    <a href="mailto:your.email@example.com">facebook</a>
+                </div>
+                <div class="social-logo">
+                    <img class="thelogo" src="whatsapp.png" alt="whatsapp_logo">
+                    <img class="thelogo" src="instagram.png" alt="instagram_logo">
+                    <img class="thelogo" width="50px" src="facebook (1).png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="second_navbar">
+        <ul>
+            <li style="font-family: red serif;"><b id="abou" style="font-size: 60px;">10+</b>Years of Experience</li>
+            <li class="slash" style="font-size: 120px;">|</li>
+            <li style="font-family: red serif;"><b style="font-size: 60px;">30+</b>Projects Completed</li>
+            <li class="slash" style="font-size: 120px;">|</li>
+            <li style="font-family: red serif;"><b style="font-size: 60px;">5+</b>Technology Mastered</li>
+            <li class="slash" style="font-size: 120px;">|</li>
+            <li style="font-family: red serif;"><b style="font-size: 60px;">100+</b>Satisfied Clients</li>
+        </ul>
+    </div>
+
+    <div id="abou" class="About">
+        <div class="about_me">
+            <p class="abacus" style="font-size: 100px;">About Me</p>
+            <p class="abacuss" style="font-size: 50px;">Web Developer</p>
+            <p class="para">I am Yash Vishwakarma, a passionate and driven B.Tech student specializing in Artificial
+                Intelligence and Machine Learning (AIML), currently, I am in a 3rd year. With good skills in Machine
+                Learning, AI, Python, and Web Development, I am constantly exploring innovative technologies and their
+                real-world applications. My ultimate goal is to become a successful entrepreneur and launch my own
+                startup, where I can leverage my technical skills to create impactful solutions. I am eager to learn,
+                grow, and turn my ideas into reality. 🚀</p>
+            <button id="resume">Resume</button>
+        </div>
+        <div class="second_profile_pic">
+            <img src="Profile-picture.jpeg" alt="image">
+        </div>
+    </div>
+
+    <div class="MySkills">
+        <div class="skills">
+            <h1 class="heading">My Skills</h1>
+            <div class="boxes">
+                <div class="softskills">
+                    <h2 style="position: relative; left: 37%; pointer-events: none; font-family: red serif;">Soft Skills</h2>
+                    <ul style="pointer-events: none;">
+                        <li><b style="font-size: larger;">Leadership: </b>Inspiring others, motivating teams, taking
+                            initiative, delegating tasks.</li>
+                        <li><b style="font-size: larger;">Communication: </b>Effective verbal and written communication,
+                            active listening, clear
+                            expression of ideas.</li>
+                        <li><b style="font-size: larger;">Team Work: </b>Collaboration, ability to work well with
+                            others, supporting colleagues,
+                            conflict resolution.</li>
+                        <li><b style="font-size: larger;">Creativity: </b>Generating new ideas, thinking outside the
+                            box, innovative approaches.</li>
+                        <li><b style="font-size: larger;">Problem Solving: </b>Analyzing situations, identifying
+                            solutions, critical thinking,
+                            decision-making.</li>
+                        <li><b style="font-size: larger;">Time management: </b>Prioritizing tasks, meeting deadlines,
+                            efficient work habits.</li>
+                    </ul>
+                </div>
+                <img style="pointer-events: none;" width="400px" src="handsome.png" alt="image">
+                <div class="professionalskills">
+                    <h2 style="position: relative; left: 30%; pointer-events: none; font-family: red serif;">Professional Skills</h2>
+                    <ul style="pointer-events: none;">
+                        <li><b style="font-size: large;">Programming Skills: </b>Efficient in doing programming in
+                            Multiple languages like Python with
+                            Django, JavaScript, CSS and HTML</li>
+                        <li><b style="font-size: larger;">Website Development: </b>Know how to create a good and
+                            attractive websites.</li>
+                        <li><b style="font-size: larger;">Presentation skills: </b>Delivering compelling presentations
+                            to audiences.</li>
+                        <li><b style="font-size: larger;">Financial literacy: </b>Understanding financial statements,
+                            budgeting, cost analysis.</li>
+                        <li><b style="font-size: larger;">Project management: </b>Planning, organizing, and executing
+                            projects to meet deadlines.</li>
+                        <li><b style="font-size: larger;">Marketing: </b>Efficient in doing marketing, Digitally and
+                            Normally both.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <p id="abo" style="color: rgb(19, 13, 63); margin-top: 0;">yash</p>
+        <b style="font-family: red serif;">My Services</b>
+        <div class="outer_box">
+            <div class="inner_box">
+                <img class="image" src="software.png">
+                <p class="head">Web Development</p>
+                <p class="tail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis similique optio
+                    deserunt consequuntur labore officiis dolor, deleniti, quaerat qui dicta ipsam in rerum? Earum
+                    repudiandae nostrum dolor, delectus provident ipsa.</p>
+                <button id="readmore1">Read More</button>
+            </div>
+            <div class="inner_box">
+                <img class="image" src="python.png">
+                <p class="head">Python Developer</p>
+                <p class="tail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum ipsa ratione
+                    repudiandae vitae vel magnam excepturi dolore, sint assumenda impedit, quis iusto voluptate est
+                    perferendis deserunt distinctio, enim recusandae.</p>
+                <button id="readmore2">Read More</button>
+            </div>
+            <div class="inner_box">
+                <img class="image" src="business-growth.png">
+                <p class="head">Digital Marketing</p>
+                <p class="tail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam consequatur esse, illum
+                    reprehenderit mollitia harum rem possimus nisi vitae magnam delectus nihil ducimus voluptates quas
+                    repudiandae cum at? Alias, ut.</p>
+                <button id="readmore3">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div id="ab" class="left">
+            <img src="handsome.png">
+            <!-- <img src="handsome-man.jpg"> -->
+        </div>
+        <div class="right">
+            <h1 style="position: relative; left: 280px; font-family: red serif;">Contact Us</h1>
+            <div class="box">
+                <div class="odd">
+                    <h3>Full Name</h3>
+                    <input class="user-input" type="text" id="inputBox" placeholder="Enter your name">
+                    <h3>Email</h3>
+                    <input class="user-input" type="text" id="inputBox" placeholder="Enter your email id">
+                    <h3>Contact Number</h3>
+                    <input class="user-input" type="text" id="inputBox" placeholder="Enter your contact no">
+                    <p><button onclick="printInputs()">Submit</button></p>
+                </div>
+                <div class="even">
+                    <h3>Contact Number:</h3>
+                    <p><a>+91 7879096050</a></p>
+                    <h3>email Id:</h3>
+                    <p><a>vishwakarmayash@gmail.com</a></p>
+                    <h3>Situated In:</h3>
+                    <p>
+                        <img class="thelogo" width="80px" src="gateway-of-india.png" alt="gateway-of-india"><b
+                            style="position: relative;; bottom: 10px;">Mumbai, India</b></img>
+                        <!-- <img width="100px" src="gateway-of-india (1).png"> -->
+                    </p>
+
+                    <h3>Social Media Platforms</h3>
+                    <p>
+                        <img class="thelogo" width="50px" src="facebook (1).png">
+                        <img class="thelogo" width="50px" src="instagram.png">
+                        <img class="thelogo" width="50px" src="twitter.png">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: yash1103@gmail.com</p>
+                <p>Phone: +91 7879096050</p>
+                <p>Address: Marine Drive, Mumbai</p>
+            </div>
+            <div class="footer-section">
+                <h3>Developer Logo</h3>
+                <img width="150px" src="crop1.jpg" alt="mylogo">
+                <figcaption>Yash Vishwakarma</figcaption>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img width="30px" src="facebook (1).png"> Facebook</a>
+                    <a href="#"><img width="30px" src="twitter.png"> Twitter</a>
+                    <a href="#"><img width="30px" src="instagram.png"> Instagram</a>
+                    <a href="#"><img width="25px" src="threads_logo.jpg"> Threads</a>
+                </div>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Company's Logo</h3>
+                <img width="120px" src="logo.jpg" alt="company_logo">
+            </div>
+            <div class="footer-section sponsors">
+                <h3>Our Sponsors Company</h3>
+                <img src="cocacola.png" alt="Sponsor 1">
+                <img src="samsung.png" alt="Sponsor 2">
+                <img src="canon.png" alt="Sponsor 3">
+                <img src="pepsi.png" alt="Sponsor 4">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Dynamic Creators. | All rights reserved. | Powered by OpenAI</p>
+        </div>
+    </footer>
+
+    <script>
+        // Show the about section after 2 seconds
+        setTimeout(function () {
+            document.getElementById("about").classList.add("show-about");
+        }, 2000);
+        setTimeout(function () {
+            document.getElementById("photo").classList.add("show-about");
+        }, 2000)
+
+        const image = document.getElementById("A");
+        const resume = document.getElementById("resume")
+        const readmore1 = document.getElementById("readmore1")
+        const readmore2 = document.getElementById("readmore2")
+        const readmore3 = document.getElementById("readmore3")
+
+        let shifted = false;
+
+        image.addEventListener("click", () => {
+            if (!shifted) {
+                document.body.style.marginTop = "-70px";
+            } else {
+                document.body.style.marginTop = "0px";
+            }
+            shifted = !shifted;
+        });
+
+        resume.addEventListener("click", () => {
+            window.open("file:///C:/Users/91787/Projects/Self_Website/resume.html")
+        });
+
+        readmore1.addEventListener("click", () => {
+            window.open("https://www.w3schools.com/whatis/")
+        })
+
+        readmore2.addEventListener("click", () => {
+            window.open("https://www.w3schools.com/python/python_intro.asp")
+        })
+
+        readmore3.addEventListener("click", () => {
+            window.open("https://en.wikipedia.org/wiki/Digital_marketing#:~:text=Digital%20marketing%20is%20the%20component,to%20promote%20products%20and%20services.http://127.0.0.1:3000/Digital_Marketing.html")
+        })
+
+        function printInputs() {
+            let inputFields = document.querySelectorAll(".user-input"); // Select all elements with class "user-input"
+
+            inputFields.forEach((input, index) => {
+                if (input.value.trim() !== "") { // Avoid printing empty inputs
+                    console.log(`Input ${index + 1}:`, input.value);
+                    // console.log(`Full Name: ${input.value} | Email: ${input.value} | Contact No: ${input.value}`);
+                    input.value = ""; // Clear the input field
+                    alert("Your response has been submitted!");
+                }
+            });
+        }
+
+        function scrollToSection() {
+            window.scrollTo({
+                top: 830,
+                behavior: 'smooth' // Enables smooth scrolling
+            });
+        }
+
+        function skills() {
+            window.scrollTo({
+                top: 1480,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollToSections() {
+            document.getElementById('abo').scrollIntoView({
+                behavior: 'smooth' // Enables smooth scrolling
+            });
+        }
+
+        // function scrollToSectionss() {
+        //     document.getElementById('ab').scrollIntoView({
+        //         behavior: 'smooth' // Enables smooth scrolling
+        //     });
+        // }
+
+        function scrollToSectionss(){
+            window.scrollTo({
+                top: 2900,
+                behavior: 'smooth'
+            });
+        }
+
+        function bottom(){
+            window.scrollTo({
+                top: 3400,
+                behavior: 'smooth'
+            });
+        }
+
+        function srollToHome() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Enables smooth scrolling
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let inputs = document.querySelectorAll(".user-input");
+
+            inputs.forEach((input, index) => {
+                input.addEventListener("keydown", function (event) {
+                    if (event.key === "Enter") {
+                        event.preventDefault(); // Prevent form submission
+                        let nextInput = inputs[index + 1];
+                        if (nextInput) {
+                            nextInput.focus();
+                        }
+                    }
+                });
+            });
+        });
+
+        // document.addEventListener("contextmenu", (event) => event.preventDefault());
+        // document.addEventListener("keydown", (event) => {
+        //     if (event.key === "F12" ||
+        //         (event.ctrlKey && event.shiftKey && event.key === "I") ||
+        //         (event.ctrlKey && event.shiftKey && event.key === "J") ||
+        //         (event.ctrlKey && event.key === "U")) {
+        //         event.preventDefault();
+        //     }
+        // });
+
+        function subscribeNewsletter() {
+            var email = document.getElementById("email").value;
+            if (email.includes("@") && email.includes(".")) {
+                alert("Thank you for subscribing!");
+            } else {
+                alert("Please enter a valid email address.");
+            }
+        }
+
+        const textArray = ["Web Developer!","Python Developer!"]
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const speed = 100;
+        const eraseSpeed = 50;
+        const delay = 1000;
+        const textElement = document.getElementById("typed-text");
+
+        function typeEffect() {
+            const currentText = textArray[textIndex];
+            
+            if (isDeleting) {
+                textElement.textContent = currentText.substring(0, charIndex--);
+            } else {
+                textElement.textContent = currentText.substring(0, charIndex++);
+            }
+
+            if (!isDeleting && charIndex === currentText.length) {
+                setTimeout(() => isDeleting = true, delay);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % textArray.length;
+            }
+
+            setTimeout(typeEffect, isDeleting ? eraseSpeed : speed);
+        }
+
+        document.addEventListener("DOMContentLoaded", typeEffect);
+    
+    </script>
+
+</body>
+
+</html>
